@@ -1,4 +1,3 @@
-// Add new filenames here as you add them to your /images folder
 const images = [
     'look1.jpg', 
     'look2.jpg', 
@@ -11,7 +10,7 @@ const lightboxImg = document.getElementById('lightbox-img');
 
 images.forEach(src => {
     const img = document.createElement('img');
-    img.src = `images/${src}`; // Assumes images are in an 'images' folder
+    img.src = `images/${src}`; 
     img.onclick = () => {
         lightbox.style.display = 'flex';
         lightboxImg.src = img.src;
