@@ -42,3 +42,29 @@ section p { line-height: 1.6; color: #555; font-size: 1.1rem; }
 }
 .lightbox img { max-width: 90%; max-height: 80%; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
 #close { position: absolute; top: 30px; right: 40px; font-size: 40px; cursor: pointer; }
+
+/* --- MOBILE OPTIMIZATION --- */
+@media (max-width: 600px) {
+    /* Give the text room to breathe */
+    section { 
+        padding: 40px 20px; /* Reduces vertical padding, increases horizontal safety */
+    }
+    
+    /* Ensure text doesn't hit the absolute edges */
+    section p { 
+        padding: 0 10px; 
+    }
+
+    /* Make the button look like a real, tappable Call-to-Action */
+    .cta-button {
+        display: block; /* Makes it fill the width nicely */
+        width: 80%;     /* Gives it a nice frame */
+        margin: 20px auto 0 auto; /* Centers it perfectly */
+        padding: 18px;  /* Increases tap area */
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    
+    /* Make the heading smaller so it doesn't break the layout */
+    h1 { font-size: 1.8rem; letter-spacing: 4px; }
+}
